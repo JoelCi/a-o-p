@@ -3,10 +3,13 @@
 - hosts: all
  
   tasks:
-  
   - name: example copying file with owner and permissions
     copy:
       dest: ~/home/Documents/awx-task-file-to-test.txt
       src: /mydir/awx-task-file-to-test.txt
       remote_src: no  
-#dest: ~/projects/playbooks/DocumentsForTest/awx-task-file-to-test.txt
+
+#this is a simple example of how copy a file from localhost to a remote host
+#src directory is inside ansible/awx_task this is the default location, 
+#if you try to use a path inside the Docker's host machine, ansible will say 
+#"directory was skipped as it does not seem to be a valid directory or it cannot be accessed."
