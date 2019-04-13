@@ -12,5 +12,5 @@
   - name: Recursively find /var/tmp files with last access time greater than 3600 seconds
   - find:
       paths: /home/Documents
-      age: 3600
+      age: 36
       recurse: yes
