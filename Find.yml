@@ -9,7 +9,7 @@
       age: 36
       recurse: yes
   - stat:
-      path: /path/to/something
+      path: ~/home/Documents
     register: p
   - debug:
       msg: "Path exists and is a directory"
