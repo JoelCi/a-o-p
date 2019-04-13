@@ -8,4 +8,4 @@
     copy:
       dest: /var/lib/awx/projects/_8__my_playbooks/test-file.txt
       src: /home/Documents/test-file.txt
-      remote_src: yes
+      remote_src: no
