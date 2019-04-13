@@ -10,7 +10,7 @@
 #      src: /home/Documents/test-file.txt
 #      remote_src: no
   - name: Recursively find /var/tmp files with last access time greater than 3600 seconds
-  - find:
+    find:
       paths: /home/Documents
       age: 36
       recurse: yes
