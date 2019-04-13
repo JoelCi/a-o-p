@@ -5,7 +5,7 @@
   tasks:
   - name: Recursively find /tmp files older than 2 days
     find:
-      paths: ~/home/Documents
+      paths: /home/Documents
       age: 36
       recurse: yes
     
