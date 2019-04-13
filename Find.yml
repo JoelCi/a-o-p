@@ -3,21 +3,21 @@
 - hosts: all
  
   tasks:
-#  - name: Recursively find /tmp files older than 2 days
-#    find:
-#      paths: ~/home/Documents
-#      age: 36
-#      recurse: yes
+  - name: Recursively find /tmp files older than 2 days
+    find:
+      paths: ~/mydir
+      age: 36
+      recurse: yes
 #  - stat:
 #      path: ~/projects/playbooks/_7__my_playbooks/Find.yml
 #    register: p
 #  - debug:
 #      msg: "Path exists and is a directory"
 #    when: p.stat.isdir is defined and p.stat.isdir 
-  - name: ansible create directory example
-    file:
-      path: /mydir/devops_directory
-      state: directory
+#  - name: ansible create directory example
+#    file:
+#      path: /mydir/devops_directory
+#      state: directory
 #  - name: example copying file with owner and permissions
 #    copy:
 #      dest: /var/lib/awx/projects/_8__my_playbooks/test-file.txt
