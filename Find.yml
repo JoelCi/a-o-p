@@ -8,7 +8,12 @@
       paths: ~/home/Documents
       age: 36
       recurse: yes
-    
+  - stat:
+      path: /path/to/something
+    register: p
+  - debug:
+      msg: "Path exists and is a directory"
+    when: p.stat.isdir is defined and p.stat.isdir    
 #  - name: example copying file with owner and permissions
 #    copy:
 #      dest: /var/lib/awx/projects/_8__my_playbooks/test-file.txt
