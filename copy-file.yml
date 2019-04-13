@@ -1,0 +1,10 @@
+---
+
+- hosts: all
+ 
+  tasks:
+
+  - name: example copying file with owner and permissions
+    copy:
+      src: /home/Desktop/test-file.txt
+      dest: /home/Documents/test-file.txt
