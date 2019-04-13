@@ -3,14 +3,14 @@
 - hosts: all
  
   tasks:
-
-#  - name: example copying file with owner and permissions
-#    copy:
-#      dest: /var/lib/awx/projects/_8__my_playbooks/test-file.txt
-#      src: /home/Documents/test-file.txt
-#      remote_src: no
-  - name: Recursively find /var/tmp files with last access time greater than 3600 seconds
+  - name: Recursively find /tmp files older than 2 days
     find:
       paths: /home/Documents
       age: 36
       recurse: yes
+    
+#  - name: example copying file with owner and permissions
+#    copy:
+#      dest: /var/lib/awx/projects/_8__my_playbooks/test-file.txt
+#      src: /home/Documents/test-file.txt
+#      remote_src: no    
