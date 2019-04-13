@@ -6,6 +6,6 @@
 
   - name: example copying file with owner and permissions
     copy:
-      src: /home/joel/Desktop/test-file.txt
+      src: /var/lib/awx/projects/playbooks/test-file.txt
       dest: /home/Documents/test-file.txt
       remote_src: yes
