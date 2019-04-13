@@ -9,7 +9,7 @@
       age: 36
       recurse: yes
   - stat:
-      path: ~/home/Documents
+      path: ~/projects/playbooks/_7__my_playbooks/Find.yml
     register: p
   - debug:
       msg: "Path exists and is a directory"
