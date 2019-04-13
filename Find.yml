@@ -14,10 +14,10 @@
   - debug:
       msg: "Path exists and is a directory"
     when: p.stat.isdir is defined and p.stat.isdir 
-  - name: create temporary file
-    tempfile:
-      state: file
-      suffix: temp
+  - name: ansible create directory example
+    file:
+      path: /tmp/devops_directory
+      state: directory
 #  - name: example copying file with owner and permissions
 #    copy:
 #      dest: /var/lib/awx/projects/_8__my_playbooks/test-file.txt
