@@ -1,0 +1,11 @@
+---
+
+- hosts: all
+ 
+  tasks:
+  
+  - name: example copying file with owner and permissions
+    copy:
+      src: ~/var/lib/awx/projects/_8__my_playbooks/test-file.txt
+      dest: ~/home/Documents/test-file.txt
+      remote_src: no   
