@@ -8,4 +8,4 @@
     copy:
       src: /joel/var/lib/awx/projects/playbooks/DocumentsForTest/test-file.txt
       dest: ~/home/Documents/test-file2.txt
-      remote_src: yes   
+      remote_src: no  
