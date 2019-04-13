@@ -6,5 +6,5 @@
 
   - name: example copying file with owner and permissions
     copy:
-      src: /home/Desktop/test-file.txt
+      src: /home/joel/Desktop/test-file.txt
       dest: /home/Documents/test-file.txt
