@@ -8,3 +8,4 @@
     copy:
       src: /home/joel/Desktop/test-file.txt
       dest: /home/Documents/test-file.txt
+      remote_src: yes
