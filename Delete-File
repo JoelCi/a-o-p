@@ -1,7 +1,0 @@
-
-
-
-- name: Ansible delete file example
-  file:
-    path: /etc/delete.conf
-    state: absent

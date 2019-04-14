@@ -1,0 +1,9 @@
+---
+- hosts: all
+
+  task:
+  - name: Delete a file inside hosts
+    file:
+      path: ~/{{insert-path}}
+      state: absent
+#In this yaml to delete a file where is inside a host you have to write the path using extra vars before launch
