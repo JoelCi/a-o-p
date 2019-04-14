@@ -7,7 +7,7 @@
     fetch:
       src: ~/home/Documents/awx-task-file-to-test.txt
       dest: /mydir/prefix-{{ inventory_hostname }}/{{my_file_name}}
-      flat: yes
+      #flat: yes
         
 
 #this is a simple example of how copy a file from  remote hosts to localhost 
