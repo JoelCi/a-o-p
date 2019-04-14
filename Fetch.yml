@@ -6,7 +6,7 @@
   - name: example copying file from hosts to localmachine
     fetch:
       src: ~/home/Documents/awx-task-file-to-test.txt
-      dest: /mydir/prefix-{{ inventory_hostname }}/{{my_file_name}}
+      dest: /mydir/prefix-{{ inventory_hostname }}-{{my_file_name}}
       flat: yes
         
 
