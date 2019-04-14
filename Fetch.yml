@@ -1,0 +1,16 @@
+---
+
+- hosts: all
+ 
+  tasks:
+  - name: example copying file from hosts to localmachine
+    fetch:
+      src: ~/home/Documents/awx-task-file-to-test.txt
+      dest: /mydir/prefix-{{ inventory_hostname }}
+      flat: yes
+        
+
+#this is a simple example of how copy a file from  remote hosts to localhost 
+#dest directory is inside ansible/awx_task this is the default location, 
+#if you try to use a path inside the Docker's host machine, ansible will say 
+#"directory was skipped as it does not seem to be a valid directory or it cannot be accessed."
