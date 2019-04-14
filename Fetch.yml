@@ -1,6 +1,6 @@
 ---
 
-- hosts: all
+- hosts: host-a-to-z
 
   tasks:
   - name: example copying file from hosts to localmachine
